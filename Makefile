@@ -17,7 +17,7 @@ build: clean generate
 	@echo "[OK] App binary was created"
 
 full: clean install generate
-	CGO_ENABLED=1 go build -a -ldflags '-linkmode external -extldflags "-static"' -o ./dist/kisslists main.go
+	@go build -a -o ./dist/kisslists main.go
 	@echo "[OK] App binary was created"
 
 run:

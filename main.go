@@ -27,7 +27,7 @@ func main() {
 	}
 
 	// Open database file
-	db, err := sql.Open("sqlite3", *dbfile)
+	db, err := sql.Open("sqlite", *dbfile)
 	if err != nil {
 		panic(err)
 	}

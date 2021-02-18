@@ -6,7 +6,7 @@ import (
 	"log"
 
 	// sqlite
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 // Item is a stored list item
